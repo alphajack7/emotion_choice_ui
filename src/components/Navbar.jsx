@@ -15,7 +15,7 @@ const Navbar = () => {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
   return (
-    <nav className='  bg-gradient-to-r from-blue-400 to-purple-400'>
+    <nav className='  bg-gradient-to-b from-pink-200 to-white shadow-md"  px-2'>
       <div className='  px-2.5 py-1.5 flex justify-between items-center'>
         <div>
         <p className='text-3xl font-bold'>Emotions Choice</p>
@@ -35,7 +35,7 @@ const Navbar = () => {
         })} className='w-[30px]' alt="" />
       </div>
        
-      <div className='hidden md:block rounded-2xl bg-white px-2.5 py-0.5'>
+      <div className='hidden md:block rounded-2xl bg-white px-2.5 py-0.5 border-2 border-black'>
         <input type="text" ref={searchRef} className='w-[200px] outline-0 ' placeholder='ctrl+k' />
         <input type="submit" value="Search" />
       </div>
