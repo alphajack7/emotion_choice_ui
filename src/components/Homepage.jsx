@@ -33,7 +33,7 @@ const Homepage = () => {
     <div
       className="w-full min-h-[90%] md:h-[90%] px-5 py-2.5  bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100"
       style={{
-        backgroundImage: 'url(src/assets/5037782.jpg)',
+        backgroundImage: 'url(/5037782.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
