@@ -2,7 +2,7 @@ import React from 'react'
 import Allcomponent from './components/Allcomponent'
 const App = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Allcomponent />
     </div>
   )
