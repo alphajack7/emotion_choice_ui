@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [menuVisibility, setMenuVisibilty] = useState(false)
   const searchRef = useRef(null);
@@ -55,8 +56,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`shadow-md px-2`}
-      style={animatedGradient}
+      className={` w-full shadow-md px-2 sticky top-0 left-0`}
+      style={animatedGradient} 
     >
       <div className='px-2.5 py-1.5 flex justify-between items-center'>
         <div>
@@ -64,8 +65,8 @@ const Navbar = () => {
         </div>
         {/* desktop menu */}
         <div className='hidden md:flex gap-8 text-xl text-white'>
-          <a href="">Home</a>
-          <a href="">Blog</a>
+          <Link to='/'>Home</Link>
+           <Link to="/blogs">Blog</Link>
           <a href="">About Us</a>
           <a href="">Contact</a>
         </div>
@@ -79,14 +80,14 @@ const Navbar = () => {
             <input type="text" ref={searchRef} className={`w-[200px] outline-0 ${paletteClasses.inputText}`} placeholder='ctrl+k' />
             <input type="submit" value="Search" className={paletteClasses.button} />
           </div>
-          <div>
+          {/* <div>
             <input
               type="checkbox"
               className={`appearance-none w-[60px] h-[25px] rounded-2xl ${paletteClasses.bgSwitch}`}
               checked={false}
               readOnly
             />
-          </div>
+          </div> */}
         </div>
       </div>
       {/* mobile menu */}
@@ -95,8 +96,8 @@ const Navbar = () => {
           <input type="text" className={`w-[200px] outline-0 ${paletteClasses.inputText}`} placeholder='ctrl+k' />
           <input type="submit" value="Search" className={paletteClasses.button} />
         </div>
-        <a href="" className={paletteClasses.accent}>Home</a>
-        <a href="" className={paletteClasses.accent}>Blog</a>
+         <Link to='/' className={paletteClasses.accent}>Home</Link>
+           <Link to="/blogs" className={paletteClasses.accent}>Blog</Link>
         <a href="" className={paletteClasses.accent}>About Us</a>
         <a href="" className={paletteClasses.accent}>Contact</a>
       </div>}
