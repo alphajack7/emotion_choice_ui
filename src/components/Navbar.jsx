@@ -63,7 +63,7 @@ const Navbar = () => {
           <p className={`text-3xl font-bold ${paletteClasses.accent}`}>Emotions Choice</p>
         </div>
         {/* desktop menu */}
-        <div className='hidden md:flex gap-8 text-xl text-grey-700'>
+        <div className='hidden md:flex gap-8 text-xl text-white'>
           <a href="">Home</a>
           <a href="">Blog</a>
           <a href="">About Us</a>
