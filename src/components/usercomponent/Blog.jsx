@@ -23,7 +23,8 @@ const Blog = () => {
     </div>
     <div className=' h-full  col-start-3 col-end-11 flex flex-col gap-5 items-center'>
         {blogs.map((blog)=>{
-       return <div  className='w-[80%]  bg-purple-200 rounded-2xl px-5 py-5'>
+       return <a href="" className='w-[80%]  bg-purple-200 rounded-2xl px-5 py-5'>
+        <div  >
         <p className='text-2xl underline mb-1'>{blog.head}</p>
         <span className='rounded-2xl text-xs bg-white px-1 py-0.5  '>Motivation</span>
         <div className='flex gap-5 mt-2.5'>
@@ -31,6 +32,7 @@ const Blog = () => {
             <p>{blog.body}</p>
         </div>
        </div>
+       </a>
         })}
     </div>
     <div className='col-start-11 col-end-13 border h-full'></div>
