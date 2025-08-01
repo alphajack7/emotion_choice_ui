@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../config/firebase";
+import { db } from "../config/Firebase";
 
 const fetchPost = createAsyncThunk('fetchPost', async () => {
   console.log('hello');
