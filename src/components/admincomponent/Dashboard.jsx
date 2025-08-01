@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { db } from '../../config/firebase'
+import { db } from '../../config/Firebase'
 import { collection,addDoc,deleteDoc,doc } from 'firebase/firestore'
 import { serverTimestamp } from 'firebase/firestore'
 import { useSelector,useDispatch } from 'react-redux'
